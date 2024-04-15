@@ -168,6 +168,14 @@ img {
   text-decoration: none;
 }
 
+.header__nav ul a:hover {
+  text-decoration: underline;
+}
+
+.header__nav ul a:active {
+  color: var(--gray);
+}
+
 /* Author - HomePage */
 .author {
   padding: 10px 0;

@@ -1,1 +1,105 @@
-<h1>Contact</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: "Montserrat", sans-serif;
+        color: var(--primary-color);
+        font-size: var(--font-size-base);
+      }
+      .contact-form h2 {
+        margin-bottom: 20px;
+        font-size: var(--font-size-lg);
+        font-weight: 600;
+      }
+      .form-control {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.7rem 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid var(--primary-color);
+        border-radius: var(--border-radius);
+      }
+      .btn {
+        background-color: var(--accent-color);
+        border: none;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: var(--border-radius);
+        transition: background-color 0.3s ease;
+      }
+      .btn:hover {
+        background-color: #ff4757;
+      }
+      .footer {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 40px 0;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="contact-form">
+        <h2 class="text-center">Contact Us</h2>
+        <form action="/contact" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+```
